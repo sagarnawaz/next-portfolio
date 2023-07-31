@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 import portfolioImg from '../public/projects/portfolio.png'
 import budgetImg from '../public/projects/budget.png'
-import ProjectItem from './Projectitem'
+import ProjectItem from './ProjectItem'
 
 const Projects = () => {
   return (
