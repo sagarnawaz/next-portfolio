@@ -52,8 +52,8 @@ const Navbar = () => {
         <a href="http://
         ">
            <Image
-          src="/../public/assets/mylogo.png"
-          alt="/"
+          src="/assets/mylogo.png"
+          alt="HTML"
           width={200}
           height={100}
         />
