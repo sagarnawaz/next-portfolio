@@ -47,9 +47,13 @@ const Contact = () => {
     <MailOutlined />
     </div>
     </a>
+                    
+
+            <a href="https://drive.google.com/file/d/18Bddz2C1hW-hzY25lCtB9AVgjsax6EX-/view">
                     <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
                         <FilePdfOutlined   />
-                    </div>
+                    </div>      
+            </a>
                         </div>
                     </div>
 

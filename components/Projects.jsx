@@ -1,8 +1,10 @@
 import React from 'react'
 import Image from 'next/image';
-import portfolioImg from '../public/projects/portfolio.png'
+import analysisImg from '../public/projects/analysis.png'
 import budgetImg from '../public/projects/budget.png'
 import ProjectItem from './ProjectItem'
+import todoImg from '../public/projects/todo.png'
+
 
 const Projects = () => {
   return (
@@ -12,13 +14,17 @@ const Projects = () => {
             <h2 className='py-4'>What I've Build</h2>
             <div className='grid md:grid-cols-2 gap-8'>
 
-              <ProjectItem title='Portfolio' 
-              backgroundImg={portfolioImg} 
-              projectUrl='https://sagarnawaz.github.io/Vetevo/'
+              <ProjectItem title='Sentiment Analysis' 
+              backgroundImg={analysisImg} 
+              projectUrl='https://sentiment-analysis-kappa.vercel.app/'
               />
                <ProjectItem title='Budget App' 
               backgroundImg={budgetImg} 
               projectUrl='https://sagarnawaz.github.io/Budget-App/'
+              />
+              <ProjectItem title='Todo-List' 
+              backgroundImg={todoImg} 
+              projectUrl='https://to-do-list-nine-wine.vercel.app/'
               />
 
             </div>
