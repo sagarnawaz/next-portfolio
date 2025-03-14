@@ -1,39 +1,36 @@
-import React from 'react'
+import React from 'react';
 import Image from 'next/image';
-import analysisImg from '../public/projects/analysis.png'
-import budgetImg from '../public/projects/budget.png'
-import ProjectItem from './ProjectItem'
-import todoImg from '../public/projects/todo.png'
-
+import bloggingApp from '../public/projects/blogging-app.png';
+import startupPlatform from '../public/projects/startup.png';
+import ProjectItem from './ProjectItem';
+import nikeImg from '../public/projects/nike.png';
 
 const Projects = () => {
   return (
-    <div id='projects' className='w-full'>
-        <div className='max-w-[1240px] mx-auto px-2 py-10'>
-            <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Projects</p>
-            <h2 className='py-4'>What I've Build</h2>
-            <div className='grid md:grid-cols-2 gap-8'>
-
-              <ProjectItem title='Sentiment Analysis' 
-              backgroundImg={analysisImg} 
-              projectUrl='https://sentiment-analysis-kappa.vercel.app/'
-              />
-               <ProjectItem title='Budget App' 
-              backgroundImg={budgetImg} 
-              projectUrl='https://sagarnawaz.github.io/Budget-App/'
-              />
-              <ProjectItem title='Todo-List' 
-              backgroundImg={todoImg} 
-              projectUrl='https://to-do-list-nine-wine.vercel.app/'
-              />
-
-            </div>
-
-
+    <div id='projects' className='w-full bg-gray-100 dark:bg-gray-900 text-black dark:text-white'>
+      <div className='max-w-[1240px] mx-auto px-2 py-10'>
+        <p className='text-xl tracking-widest uppercase text-blue-600 dark:text-blue-400'>Projects</p>
+        <h2 className='py-4 text-gray-800 dark:text-gray-200'>What I've Built</h2>
+        <div className='grid md:grid-cols-2 gap-8'>
+          <ProjectItem 
+            title='Personal Blogging' 
+            backgroundImg={bloggingApp} 
+            projectUrl='https://blogging-app-weld-iota.vercel.app/'
+          />
+          <ProjectItem 
+            title='Startup Platform' 
+            backgroundImg={startupPlatform} 
+            projectUrl='https://startup-one-gold.vercel.app/'
+          />
+          <ProjectItem 
+            title='Nike' 
+            backgroundImg={nikeImg} 
+            projectUrl='https://nike-app-green.vercel.app/'
+          />
         </div>
-
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
