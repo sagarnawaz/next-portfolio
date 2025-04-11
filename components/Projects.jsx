@@ -4,6 +4,7 @@ import bloggingApp from '../public/projects/blogging-app.png';
 import startupPlatform from '../public/projects/startup.png';
 import ProjectItem from './ProjectItem';
 import nikeImg from '../public/projects/nike.png';
+import library from '../public/projects/library.png'
 
 const Projects = () => {
   return (
@@ -26,6 +27,11 @@ const Projects = () => {
             title='Nike' 
             backgroundImg={nikeImg} 
             projectUrl='https://nike-app-green.vercel.app/'
+          />
+          <ProjectItem 
+            title='Library Management' 
+            backgroundImg={library} 
+            projectUrl='https://library-management-bice-three.vercel.app/'
           />
         </div>
       </div>
