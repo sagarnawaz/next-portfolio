@@ -124,7 +124,7 @@ const Navbar = () => {
                     <MailOutlined />
                   </div>
                 </a>
-                <a href="https://drive.google.com/file/d/18Bddz2C1hW-hzY25lCtB9AVgjsax6EX-/view">
+                <a href="https://drive.google.com/file/d/1nrWeAAGMx6n7aMEIPKDpaaO5Xp73Rzrh/view?usp=drive_link">
                   <div className="rounded-full shadow-lg shadow-gray-400 dark:shadow-gray-600 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <FilePdfOutlined />
                   </div>
