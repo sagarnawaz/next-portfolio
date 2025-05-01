@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div id='about' className='w-full md:h-screen p-2 flex items-center py-10 bg-gray-100 dark:bg-gray-900 text-black dark:text-white'>
+    <div id='about' className='w-full min-h-screen p-2 flex items-center py-10 bg-gray-100 dark:bg-gray-900 text-black dark:text-white'>
       <div className='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
         <div className='col-span-2'>
           <p className='uppercase text-xl tracking-widest text-blue-600 dark:text-blue-400'>About</p>
@@ -19,7 +19,7 @@ const About = () => {
           </p>
           <p className='py-2 text-blue-600 dark:text-blue-400 underline cursor-pointer'>Check out some of my latest projects</p>
         </div>
-        <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 dark:shadow-gray-600 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
+        <div className='w-full h-auto m-auto  rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300'>
           <img className='rounded-xl' src='https://images.pexels.com/photos/6424588/pexels-photo-6424588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='About Image'/>
         </div>
       </div>

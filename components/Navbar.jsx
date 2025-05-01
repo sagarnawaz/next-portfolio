@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { useRouter } from 'next/router';
 import { GithubOutlined, LinkedinOutlined, MailOutlined, FilePdfOutlined } from '@ant-design/icons';
 import ThemeToggle from './ThemeToggle';
@@ -74,7 +73,7 @@ const Navbar = () => {
               <a href="/">
                 <Image src="/assets/mylogo.png" alt="Logo" width={87} height={35} />
               </a>
-              <div onClick={handleNav} className="rounded-full shadow-lg shadow-gray-400 dark:shadow-gray-600 p-3 cursor-pointer">
+              <div onClick={handleNav} className="rounded-full border border-gray-400 p-3 cursor-pointer">
                 <AiOutlineClose />
               </div>
             </div>
@@ -110,22 +109,22 @@ const Navbar = () => {
               <p className="uppercase tracking-widest text-gray-600 dark:text-gray-400">Let's Connect</p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <a href="https://www.linkedin.com/in/sagar-nawaz-12081223a/">
-                  <div className="rounded-full shadow-lg shadow-gray-400 dark:shadow-gray-600 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full border border-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <LinkedinOutlined />
                   </div>
                 </a>
                 <a href="https://github.com/sagarnawaz">
-                  <div className="rounded-full shadow-lg shadow-gray-400 dark:shadow-gray-600 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full border border-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <GithubOutlined />
                   </div>
                 </a>
                 <a href="mailto:sagarnawaz44@gmail.com">
-                  <div className="rounded-full shadow-lg shadow-gray-400 dark:shadow-gray-600 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full border border-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <MailOutlined />
                   </div>
                 </a>
                 <a href="https://drive.google.com/file/d/1nrWeAAGMx6n7aMEIPKDpaaO5Xp73Rzrh/view?usp=drive_link">
-                  <div className="rounded-full shadow-lg shadow-gray-400 dark:shadow-gray-600 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full border border-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                     <FilePdfOutlined />
                   </div>
                 </a>

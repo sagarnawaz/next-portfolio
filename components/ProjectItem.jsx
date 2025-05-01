@@ -1,19 +1,27 @@
 import React from 'react'
-import Image from 'next/image';
+import Image from 'next/image'
+import Link from 'next/link'
 
-const Projectitem = ({title, backgroundImg, projectUrl}) => {
+const ProjectItem = ({ title, backgroundImg, projectUrl }) => {
   return (
-    <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 roundded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]'>
-    <Image className='rounded-xl group-hover:opacity-18' src={backgroundImg} alt='/' />
-    <div className='hidden group-hover:block absolute top-[58%] left-[50%] translater-x-[-50%] translate-y-[-50%]'>
-        <h3 className='text-2xl border-4 border-indigo-950 text-[#2e31d6] tracking-widest text-center '>{title}</h3>
-        <p className='pb-4 pt-2 text-white text-center'></p>
-        <a href={projectUrl}>
-            <p className='text-center py-3 rounded-lg bg-white text-[#3b393d] font-bold text-lg cursor-pointer'>More Info</p>
-        </a>
+    <div className="relative group rounded-xl overflow-hidden shadow-xl shadow-gray-800">
+      <Image
+        className="w-full h-full object-cover transition duration-300 group-hover:opacity-60"
+        src={backgroundImg}
+        alt={title}
+      />
+
+      {/* Overlay */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-black bg-opacity-50">
+        <h3 className="text-white text-2xl font-bold mb-4 text-center">{title}</h3>
+        <Link href={projectUrl} target="_blank">
+          <p className="px-6 py-2 bg-white text-gray-800 rounded-lg font-semibold hover:scale-105 transition">
+            View Live
+          </p>
+        </Link>
+      </div>
     </div>
-</div>
   )
 }
 
-export default Projectitem
+export default ProjectItem

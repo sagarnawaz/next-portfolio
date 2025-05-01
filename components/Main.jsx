@@ -33,22 +33,22 @@ const Main = () => {
           </p>
           <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
             <a href='https://www.linkedin.com/in/sagar-nawaz-12081223a/' target='_blank' rel='noopener noreferrer'>
-              <div className='rounded-full shadow-lg shadow-gray-400 dark:shadow-gray-600 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                <LinkedinOutlined />
+              <div className='rounded-full border border-gray-400  p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+                <LinkedinOutlined  />
               </div>
             </a>
             <a href='https://github.com/sagarnawaz' target='_blank' rel='noopener noreferrer'>
-              <div className='rounded-full shadow-lg shadow-gray-400 dark:shadow-gray-600 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+              <div className='rounded-full border border-gray-400  p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                 <GithubOutlined />
               </div>
             </a>
             <a href='mailto:sagarnawaz44@gmail.com'>
-              <div className='rounded-full shadow-lg shadow-gray-400 dark:shadow-gray-600 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+              <div className='rounded-full border border-gray-400  p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                 <MailOutlined />
               </div>
             </a>
             <a href='https://drive.google.com/file/d/1nrWeAAGMx6n7aMEIPKDpaaO5Xp73Rzrh/view?usp=drive_link'>
-              <div className='rounded-full shadow-lg shadow-gray-400 dark:shadow-gray-600 p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
+              <div className='rounded-full border border-gray-400  p-3 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <FilePdfOutlined />
               </div>
             </a>
