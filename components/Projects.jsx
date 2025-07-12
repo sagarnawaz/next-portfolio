@@ -4,15 +4,15 @@ import bloggingApp from '../public/projects/blogging-app.png';
 import startupPlatform from '../public/projects/startup.png';
 import ProjectItem from './ProjectItem';
 import nikeImg from '../public/projects/nike.png';
-import library from '../public/projects/library.png'
+import library from '../public/projects/library.png';
 
 const Projects = () => {
   return (
     <div id='projects' className='w-full bg-gray-100 dark:bg-gray-900 text-black dark:text-white'>
-      <div className='max-w-[1240px] mx-auto px-2 '>
-        <p className='text-xl tracking-widest uppercase text-blue-600 dark:text-blue-400'>Projects</p>
-        <h2 className='py-4 text-gray-800 dark:text-gray-200'>What I've Built</h2>
-        <div className='grid md:grid-cols-2 gap-8'>
+      <div className='max-w-[1240px] mx-auto p-4 sm:p-8'>
+        <p className='text-lg sm:text-xl tracking-widest uppercase text-blue-600 dark:text-blue-400 text-center'>Projects</p>
+        <h2 className='py-4 text-2xl sm:text-3xl lg:text-4xl text-gray-800 dark:text-gray-200 text-center'>What I"ve Built</h2>
+        <div className='grid sm:grid-cols-2 gap-6 sm:gap-8'>
           <ProjectItem 
             title='Personal Blogging' 
             backgroundImg={bloggingApp} 
