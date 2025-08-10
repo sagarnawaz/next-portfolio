@@ -5,6 +5,7 @@ import startupPlatform from '../public/projects/startup.png';
 import ProjectItem from './ProjectItem';
 import nikeImg from '../public/projects/nike.png';
 import library from '../public/projects/library.png';
+import lms from '../public/projects/lms.png';
 
 const Projects = () => {
   return (
@@ -13,6 +14,11 @@ const Projects = () => {
         <p className='text-lg sm:text-xl tracking-widest uppercase text-blue-600 dark:text-blue-400 text-center'>Projects</p>
         <h2 className='py-4 text-2xl sm:text-3xl lg:text-4xl text-gray-800 dark:text-gray-200 text-center'>What I"ve Built</h2>
         <div className='grid sm:grid-cols-2 gap-6 sm:gap-8'>
+          <ProjectItem 
+            title='LMS Admin' 
+            backgroundImg={lms} 
+            projectUrl='https://lms-admin-bay.vercel.app/'
+          />
           <ProjectItem 
             title='Personal Blogging' 
             backgroundImg={bloggingApp} 
